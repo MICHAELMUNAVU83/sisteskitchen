@@ -3,7 +3,7 @@ import value from "./images/value1.png";
 import { TbToolsKitchen } from "react-icons/tb";
 import { GiTomato } from "react-icons/gi";
 
-import {GrDeliver} from "react-icons/gr"
+import { GrDeliver } from "react-icons/gr";
 
 const Value = () => {
   return (
@@ -40,8 +40,14 @@ const Value = () => {
       </div>
 
       <div>
-        <div className="bg-white w-[550px] rounded-tl-3xl h-[68vh] rounded-br-3xl flex items-center">
-          <div className=" bg-gradient-to-t from-[#FFA300] flex justify-center my-auto mx-auto  bg- h-[82vh] from-blue-500 overflow-hidden rounded-tl-3xl rounded-br-3xl  w-[95%]">
+        <div className="bg-white w-[550px] rounded-tl-3xl h-[85vh] rounded-br-3xl flex items-center">
+          <div
+            className=" bg-gradient-to-t from-[#FFA300] flex justify-center my-auto mx-auto  bg- h-[82vh] from-blue-500 overflow-hidden  w-[95%]"
+            style={{
+              borderBottomRightRadius: "70px",
+              borderTopLeftRadius: "70px",
+            }}
+          >
             <img src={value} />
           </div>
         </div>

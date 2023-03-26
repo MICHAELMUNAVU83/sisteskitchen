@@ -40,7 +40,14 @@ const Hero = () => {
         </div>
       </div>
       <div className="pr-24">
-        <div className="bg-[#FFA300] w-[500px] h-[60vh] flex flex-col items-center rounded-tl-3xl rounded-bl-xl rounded-br-3xl">
+        <div
+          className="bg-[#FFA300] w-[500px] h-[60vh] flex flex-col items-center"
+          style={{
+            borderBottomRightRadius: "70px",
+
+            borderTopLeftRadius: "70px",
+          }}
+        >
           <img src={hero} className=" w-[450px] h-[60vh] my-auto" />
         </div>
       </div>
