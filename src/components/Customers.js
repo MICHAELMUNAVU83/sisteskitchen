@@ -4,24 +4,25 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./splide-green.min.css";
 import customer1 from "./images/customer1.jpeg";
 import customer2 from "./images/customer2.jpeg";
+import { IoStarSharp } from "react-icons/io5";
 const Customers = () => {
   const slides = [
     {
       image: customer1,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
       name: "John Doe",
     },
     {
       image: customer2,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
       name: "John Doe",
     },
   ];
   return (
-    <div className="mt-12 py-24    p-12">
-      <div className="flex  justify-around  gap-48 ">
+    <div className="mt-12 md:py-24 py-12    p-4">
+      <div className="flex md:flex-row flex-col gap-12  justify-around  md:gap-48 ">
         <div>
           <div
             className="bg-[#EDF7F8]   flex items-center"
@@ -33,7 +34,7 @@ const Customers = () => {
             }}
           >
             <div
-              className=" bg-gradient-to-t from-[#FFA300] flex justify-center my-auto mx-auto  bg- h-[82vh] overflow-hidden  w-[95%]"
+              className=" bg-gradient-to-t from-[#FFA300] flex justify-center my-auto mx-auto h-[50vh]   md:h-[82vh] overflow-hidden  w-[95%]"
               style={{
                 borderBottomRightRadius: "50px",
                 borderTopRightRadius: "70px",
@@ -41,22 +42,24 @@ const Customers = () => {
                 borderBottomLeftRadius: "150px",
               }}
             >
-              <img src={happycustomer} />
+              <img src={happycustomer} alt="happy customer" />
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col w-[400px] gap-2">
-          <h1>Testimonials</h1>
-          <p>What Our Customer Say</p>
-          <p>About Us</p>
+        <div className="flex flex-col w-[90%] mx-auto md:w-[50%] gap-2">
+          <h1 className="text-[#FFA300]">Testimonials</h1>
+          <p className="md:text-5xl text-3xl font-bold">
+            What Our Customer Say
+          </p>
+          <p className="text-5xl font-bold">About Us</p>
 
           <Splide
-            className="mx-auto  "
+            className="mx-auto my-8 "
             options={{
               perPage: 1,
-                perMove: 1,
-            
+              perMove: 1,
+
               autoplay: true,
               rewind: true,
 
@@ -75,15 +78,23 @@ const Customers = () => {
             {slides.map((slide, index) => (
               <SplideSlide key={index}>
                 <div className="flex flex-col gap-2">
-                  <p>{slide.message}</p>
-                  <div className="flex gap-2">
-                    <img src={slide.image} className="w-10 h-10 rounded-full" />
-                    <p>{slide.name}</p>
+                  <p className="text-gray-500">{slide.message}</p>
+                  <div className="flex my-4 gap-2">
+                    <img src={slide.image} className="w-16 h-16 rounded-full" alt="customer" />
+                    <p className="font-bold text-xl">{slide.name}</p>
                   </div>
                 </div>
               </SplideSlide>
             ))}
           </Splide>
+          <div className="flex gap-1 text-gray-500">
+            <IoStarSharp className="text-[#FFA300]" size={20} />
+            <IoStarSharp className="text-[#FFA300]" size={20} />
+            <IoStarSharp className="text-[#FFA300]" size={20} />
+            <IoStarSharp className="text-[#FFA300]" size={20} />
+            <IoStarSharp className="text-[#FFA300]" size={20} />
+            Rated 5 stars
+          </div>
         </div>
       </div>
     </div>

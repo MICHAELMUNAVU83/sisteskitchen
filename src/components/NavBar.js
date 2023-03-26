@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { IoIosArrowDown } from "react-icons/io";
+import logo from "./images/logo.png";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -28,16 +29,23 @@ const NavBar = () => {
           : " w-full h-20 z-[100] bg-white"
       }
     >
-      <div className="flex justify-between items-center w-full h-full py-4 px-2 2xl:px-16">
-        <a className="ml-4" href="/">Sistes Kitchen</a>
+      <div className="flex justify-between  items-center w-full h-full py-4 px-2 2xl:px-16">
+        <a className="ml-4 gap-1 flex items-center " href="/">
+          <img src={logo} className=" h-[50px]" alt="logo" />
+          <h1 className="text-gray-400 font-bold ">siste's</h1>{" "}
+          <h1 className="text-[#16B97A] font-bold ">kitchen</h1>
+        </a>
 
         <div>
           <ul className="hidden md:flex text-gray-500">
-            <a href="/" className="text-[#16B97A] transition-all duration-300">
+            <a
+              href="/#home"
+              className="text-[#16B97A] transition-all duration-300"
+            >
               <li className="ml-10 uppercase text-sm hover:border-b  ">Home</li>
             </a>
             <a
-              href="/"
+              href="/#about"
               className="hover:text-[#16B97A] transition-all duration-300"
             >
               <li className="ml-10 uppercase text-sm hover:border-b  ">
@@ -46,47 +54,38 @@ const NavBar = () => {
             </a>
 
             <a
-              href="/"
+              href="/#value"
               className="group hover:text-[#16B97A] transition-all duration-300"
             >
               <li className="ml-10 uppercase text-sm hover:border-b  flex  ">
-                <p>Services</p>
-                <IoIosArrowDown className="mt-1" size={15} />
+                <p>Our Value</p>
               </li>
-              <div className="hidden rounded-tl-2xl rounded-br-2xl bg-[#FFA300] font-bold z-10 group-hover:block text-white absolute pl-4  mt-2 py-2 w-[160px] ">
-                Heyyy
-              </div>
             </a>
 
             <a
-              href="/"
+              href="/#programs"
               className="group hover:text-[#16B97A] transition-all duration-300"
             >
               <li className="ml-10 uppercase text-sm flex hover:border-b  ">
-                <p>Pages</p>
+                <p>Programs</p>
                 <IoIosArrowDown className="mt-1" size={15} />
               </li>
               <div className="hidden rounded-tl-2xl rounded-br-2xl flex flex-col gap-4 bg-[#FFA300] font-bold z-10 group-hover:block text-white absolute pl-4  mt-2 py-2 w-[160px]  ">
-                <p>Matata</p>
-                <p>Matata</p>
-                <p>Matata</p>
+                <p>Weekly program</p>
+                <p>Monthly program</p>
               </div>
             </a>
             <a
-              href="/"
+              href="/#menu"
               className="group hover:text-[#16B97A] transition-all duration-300"
             >
               <li className="ml-10 flex uppercase text-sm hover:border-b  ">
-                <p>Blog</p>
-                <IoIosArrowDown className="mt-1" size={15} />
+                <p>Menu</p>
               </li>
-              <div className="hidden rounded-tl-2xl rounded-br-2xl bg-[#FFA300] font-bold z-10 group-hover:block text-white absolute pl-4  mt-2 py-2 w-[160px] ">
-                Heyyy
-              </div>
             </a>
 
             <a
-              href="/"
+              href="/#contact"
               className="group hover:text-[#16B97A] transition-all duration-300"
             >
               <li className="ml-10 uppercase text-sm hover:border-b  ">
@@ -126,7 +125,7 @@ const NavBar = () => {
             </div>
 
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">Welcome</p>
+              <img src={logo} className="h-[50px]" alt="logo" />
             </div>
           </div>
           <div>
@@ -136,12 +135,19 @@ const NavBar = () => {
                   <li className="py-4 text-sm">Home</li>
                 </a>
 
-                <a to="/mySupplies">
-                  <li className="py-4 text-sm">My Supplies</li>
+                <a href="/#about">
+                  <li className="py-4 text-sm">About</li>
                 </a>
 
-                <a to="/AddSuppliedInput">
-                  <li className="py-4 text-sm">Add Input Supply</li>
+                <a href="/#value">
+                  <li className="py-4 text-sm">Value</li>
+                </a>
+                <a href="/#programs">
+                  <li className="py-4 text-sm">Programs</li>
+                </a>
+
+                <a href="/#contact">
+                  <li className="py-4 text-sm">Contact</li>
                 </a>
               </ul>
             </div>

@@ -51,10 +51,10 @@ const Menu = () => {
     },
   ];
   return (
-    <div className="mt-12 py-24 bg-[#EDF7F8] flex flex-col items-center  p-12">
-      <h1 className="text-[#FFA300]">Our Top Menu</h1>
-      <p className="my-2 font-bold text-5xl">Our Special Dish</p>
-      <p className="my-4 text-gray-500">
+    <div id="menu" className="mt-12 md:py-24 bg-[#EDF7F8] flex flex-col items-center  p-4">
+      <h1 className="text-[#FFA300]  text-xl">Our Top Menu</h1>
+      <p className="my-2 font-bold text-3xl md:text-7xl">Our Special Dish</p>
+      <p className="my-4 md:text-2xl text-center text-sm my-2 text-gray-500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
       </p>
       <Splide
@@ -75,24 +75,24 @@ const Menu = () => {
           drag: true,
           breakpoints: {
             640: {
-              perPage: 2,
+              perPage: 1,
               perMove: 1,
             },
             768: {
-              perPage: 2,
+              perPage: 1,
               perMove: 1,
             },
             1024: {
-              perPage: 3,
-              perMove: 3,
+              perPage: 1,
+              perMove: 1,
             },
           },
         }}
       >
         {slides.map((slide, index) => (
-          <SplideSlide key={index}>
+          <SplideSlide key={index} className="mx-auto">
             <div
-              className="h-[490px] w-[360px] bg-white shadow-gray-200  shadow-3xl "
+              className="h-[490px] md:w-[360px] w-[400px] bg-white shadow-gray-200   shadow-3xl "
               style={{
                 borderTopLeftRadius: "70px",
                 borderBottomRightRadius: "70px",
@@ -101,7 +101,7 @@ const Menu = () => {
               <img
                 src={slide.image}
                 alt="slide"
-                className=" h-[300px] w-[360px] mx-auto"
+                className=" h-[300px] md:w-[360px] w-[400px] mx-auto"
                 style={{
                   borderBottomRightRadius: "70px",
                   borderTopLeftRadius: "70px",
@@ -120,7 +120,7 @@ const Menu = () => {
               </div>
 
               <h1 className="text-5xl font-bold pl-4">{slide.name}</h1>
-              <p className="text-gray-500 font-semibold text-2xl text-[#FFA300] pl-4">
+              <p className=" font-semibold text-2xl text-[#FFA300] pl-4">
                 {slide.price}
               </p>
               <p className="text-gray-500 pl-4">{slide.pax}</p>
