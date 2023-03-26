@@ -1,35 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { GiBranchArrow } from "react-icons/gi";
 
 import { GiCampCookingPot } from "react-icons/gi";
 import { TbLineDotted } from "react-icons/tb";
 import { MdAttachMoney } from "react-icons/md";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
-const Programs = () => {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
 
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: 0,
-        transition: {
-          duration: 1.5,
-          ease: "easeInOut",
-          delay: 0.2,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        y: 100,
-      });
-    }
-  }, [inView, animation]);
+const Programs = () => {
   return (
-    <motion.div
+    <div
       ref={ref}
       id="programs"
       className="md:mt-24  mt-12 md:p-12 p-4"
@@ -206,7 +184,7 @@ const Programs = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

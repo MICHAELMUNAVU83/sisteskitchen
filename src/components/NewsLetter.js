@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import newsletter from "./images/newsletter.png";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
@@ -6,33 +6,10 @@ import { IoCall } from "react-icons/io5";
 import { AiFillInstagram } from "react-icons/ai";
 import { SiTiktok } from "react-icons/si";
 import { IoLocationSharp } from "react-icons/io5";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
 
 const NewsLetter = () => {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        transition: {
-          duration: 2,
-          ease: "easeInOut",
-          delay: 0.2,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-      });
-    }
-  }, [inView, animation]);
-
   return (
-    <motion.div id="contact" className="my-12" ref={ref} animate={animation}>
+    <div id="contact" className="my-12" ref={ref} animate={animation}>
       <div className="bg-gradient-to-tl rounded-3xl from-[#A0D9C1] flex md:flex-row flex-col justify-between my-auto mx-auto  md:h-[82vh] overflow-hidden w-[90%]   md:w-[80%]">
         <div className="flex mt-24 flex-col gap-2 p-4 md:p-8 md:pl-16">
           <h1 className="md:text-5xl text-3xl font-bold signika">
@@ -121,7 +98,7 @@ const NewsLetter = () => {
           />
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

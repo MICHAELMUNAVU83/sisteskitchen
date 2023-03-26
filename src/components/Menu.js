@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./splide-green.min.css";
 import menu1 from "./images/menu1.jpg";
@@ -8,30 +8,8 @@ import menu4 from "./images/menu4.jpeg";
 import menu5 from "./images/menu5.jpeg";
 import menu6 from "./images/menu6.jpeg";
 import { IoStarSharp } from "react-icons/io5";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
-const Menu = () => {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
 
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        transition: {
-          duration: 2,
-          ease: "easeInOut",
-          delay: 0.2,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-      });
-    }
-  }, [inView, animation]);
+const Menu = () => {
   const slides = [
     {
       image: menu1,
@@ -73,7 +51,7 @@ const Menu = () => {
     },
   ];
   return (
-    <motion.div
+    <div
       id="menu"
       ref={ref}
       className="mt-12 md:py-24 bg-[#EDF7F8] flex flex-col items-center  p-4"
@@ -161,7 +139,7 @@ const Menu = () => {
           </SplideSlide>
         ))}
       </Splide>
-    </motion.div>
+    </div>
   );
 };
 

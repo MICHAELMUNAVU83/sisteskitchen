@@ -1,37 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import value from "./images/value1.png";
 import { TbToolsKitchen } from "react-icons/tb";
 import { GiTomato } from "react-icons/gi";
 import { CiDeliveryTruck } from "react-icons/ci";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
-import { motion } from "framer-motion";
+
 const Value = () => {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        transition: {
-          duration: 2,
-          ease: "easeInOut",
-          delay: 0.2,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-      });
-    }
-  }, [inView, animation]);
+ 
   return (
-    <motion.div
-      animate={animation}
+    <div
+    
       id="value"
-      ref={ref}
-      className="mt-12 p-8 bg-[#EDF7F8] md:h-[80vh] h-full flex md:flex-row
+      
+      className="mt-12 p-8 bg-[#EDF7F8] md:h-[85vh] h-full flex md:flex-row
       flex-col justify-around"
     >
       <div className="flex flex-col gap-4">
@@ -92,7 +72,7 @@ const Value = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

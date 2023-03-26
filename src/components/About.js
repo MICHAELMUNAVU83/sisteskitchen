@@ -1,29 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import about from "./images/about.jpeg";
 import { BsTelephoneFill } from "react-icons/bs";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
+
 const About = () => {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: { duration: 1, bounce: 0.5, type: "spring" },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        x: "-100vw",
-      });
-    }
-  }, [inView, animation]);
-
   return (
-    <motion.div animate={animation}>
+    <div animate={animation}>
       <div
         id="about"
         ref={ref}
@@ -82,7 +63,7 @@ const About = () => {
           </button>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
