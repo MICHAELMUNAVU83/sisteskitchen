@@ -2,8 +2,10 @@ import React from "react";
 import happycustomer from "./images/happycustomer.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./splide-green.min.css";
-import customer1 from "./images/customer1.jpeg";
-import customer2 from "./images/customer2.jpeg";
+import customer1 from "./images/customer1.jpg";
+import customer2 from "./images/customer2.jpg";
+import customer3 from "./images/customer3.jpg";
+import customer4 from "./images/customer4.jpg";
 import { IoStarSharp } from "react-icons/io5";
 const Customers = () => {
   const slides = [
@@ -15,6 +17,18 @@ const Customers = () => {
     },
     {
       image: customer2,
+      message:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+      name: "John Doe",
+    },
+    {
+      image: customer3,
+      message:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+      name: "John Doe",
+    },
+    {
+      image: customer4,
       message:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
       name: "John Doe",
@@ -80,7 +94,11 @@ const Customers = () => {
                 <div className="flex flex-col gap-2">
                   <p className="text-gray-500">{slide.message}</p>
                   <div className="flex my-4 gap-2">
-                    <img src={slide.image} className="w-16 h-16 rounded-full" alt="customer" />
+                    <img
+                      src={slide.image}
+                      className="w-16 h-16 rounded-full"
+                      alt="customer"
+                    />
                     <p className="font-bold text-xl">{slide.name}</p>
                   </div>
                 </div>
