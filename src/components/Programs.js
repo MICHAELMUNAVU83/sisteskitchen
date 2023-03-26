@@ -18,7 +18,7 @@ const Programs = () => {
           </p>
         </div>
 
-        <div className="flex mx-auto my-8 md:my-0  flex-col items-center gap-4  shadow-[#16B97A] shadow-2xl py-4 px-8 rounded-2xl md:w-[350px] w-[85%]">
+        <div className="flex mx-auto my-8 md:my-0  flex-col items-center gap-4  shadow-[#16B97A] shadow-2xl py-4 px-8 rounded-2xl md:w-[350px] w-[93%]">
           <h1 className="text-3xl font-bold">Weekly Rate</h1>
           <small>Two meals a day from Monday to Friday</small>
           <div className="bg-[#EDF7F8]/50 rounded-2xl flex flex-col gap-2 p-4 justify-center items-center">
@@ -29,25 +29,25 @@ const Programs = () => {
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 9,200</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">2 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 13,600</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">3 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 16,300</h1>
             </div>
           </div>
           <h1 className="text-2xl font-semibold">Labour Only</h1>
@@ -59,30 +59,30 @@ const Programs = () => {
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 3,500</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">2 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 4,800</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">3 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 5,800</h1>
             </div>
           </div>
         </div>
 
-        <div className="flex shadow-[#FFA300] mx-auto my-8 md:my-0   flex-col items-center gap-4 shadow-2xl px-8 py-4 rounded-lg  md:w-[350px] w-[85%]">
+        <div className="flex shadow-[#FFA300] mx-auto my-8 md:my-0   flex-col items-center gap-4 shadow-2xl px-8 py-4 rounded-lg  md:w-[350px] w-[93%]">
           <h1 className="text-3xl font-bold">Monthly Rate</h1>
           <small>Two meals a day from Monday to Friday</small>
           <div className="bg-[#EDF7F8]/50 rounded-2xl flex flex-col gap-2 p-4 justify-center items-center">
@@ -93,25 +93,25 @@ const Programs = () => {
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 24,000</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">2 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 35,000</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">3 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 40,000</h1>
             </div>
           </div>
           <h1 className="text-2xl font-semibold">Labour Only</h1>
@@ -123,25 +123,25 @@ const Programs = () => {
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 14,000</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">2 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 17,000</h1>
             </div>
             <div className="flex  gap-4">
-              <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
+              <h1 className="text-[#16B97A] font-bold ">3 pax</h1>
               <GiBranchArrow
                 className="text-[#16B97A] font-bold "
                 size={25}
                 style={{ transform: "rotate(315deg)" }}
               />
-              <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
+              <h1 className="text-[#FFA300] font-bold ">Ksh 23,000</h1>
             </div>
           </div>
         </div>
