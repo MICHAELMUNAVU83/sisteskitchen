@@ -58,7 +58,7 @@ const Menu = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
       </p>
       <Splide
-        className="w-[90%] mx-auto  "
+        className="w-[95%] mx-auto  "
         options={{
           perPage: 3,
           perMove: 1,

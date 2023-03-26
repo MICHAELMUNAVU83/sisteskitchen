@@ -38,9 +38,9 @@ const Hero = () => {
           <img src={reviewphoto} className=" md:h-[70px] h-[50px] w-[100px]" alt="reviewphoto" />
           <div className="flex flex-col gap-2">
             <p className="text-[#16B97A] font-semibold">Our Happy Customers</p>
-            <p className="flex md:gap-2 gap-1 md:text-md md:mt-0 mt-2 text-xs">
+            <p className="flex md:gap-2 gap-1 text-md ">
               <AiTwotoneStar className="text-[#FFA300]" size={25} />5 Star rated
-              (12K+ Review)
+              
             </p>
           </div>
         </div>
