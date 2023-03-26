@@ -18,19 +18,17 @@ const Menu = () => {
   useEffect(() => {
     if (inView) {
       animation.start({
-        x: 0,
+        opacity: 1,
         transition: {
-          duration: 1.5,
+          duration: 2,
           ease: "easeInOut",
-          type: "tween",
           delay: 0.2,
-          stiffness: 100,
         },
       });
     }
     if (!inView) {
       animation.start({
-        x: "-100vw",
+        opacity: 0,
       });
     }
   }, [inView, animation]);

@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 const Value = () => {
   const { ref, inView } = useInView();
   const animation = useAnimation();
-
   useEffect(() => {
     if (inView) {
       animation.start({
