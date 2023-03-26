@@ -4,10 +4,10 @@ import { BsTelephoneFill } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div animate={animation}>
+    <div>
       <div
         id="about"
-        ref={ref}
+       
         className="md:mt-24 mt-4 flex md:flex-row flex-col gap-4 md:gap-24 justify-center"
       >
         <div>

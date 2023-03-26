@@ -8,10 +8,10 @@ import { MdAttachMoney } from "react-icons/md";
 const Programs = () => {
   return (
     <div
-      ref={ref}
+     
       id="programs"
       className="md:mt-24  mt-12 md:p-12 p-4"
-      animate={animation}
+      
     >
       <div className="flex md:flex-row flex-col mx-auto  justify-around ">
         <div className="flex flex-col gap-4">

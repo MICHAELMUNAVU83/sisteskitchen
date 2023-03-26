@@ -53,9 +53,7 @@ const Menu = () => {
   return (
     <div
       id="menu"
-      ref={ref}
       className="mt-12 md:py-24 bg-[#EDF7F8] flex flex-col items-center  p-4"
-      animate={animation}
     >
       <h1 className="text-[#FFA300] md:text-5xl text-2xl delicious">
         Our Top Menu

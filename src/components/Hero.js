@@ -4,7 +4,7 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import hero from "./images/hero.png";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (

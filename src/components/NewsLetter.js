@@ -9,7 +9,7 @@ import { IoLocationSharp } from "react-icons/io5";
 
 const NewsLetter = () => {
   return (
-    <div id="contact" className="my-12" ref={ref} animate={animation}>
+    <div id="contact" className="my-12">
       <div className="bg-gradient-to-tl rounded-3xl from-[#A0D9C1] flex md:flex-row flex-col justify-between my-auto mx-auto  md:h-[82vh] overflow-hidden w-[90%]   md:w-[80%]">
         <div className="flex mt-24 flex-col gap-2 p-4 md:p-8 md:pl-16">
           <h1 className="md:text-5xl text-3xl font-bold signika">

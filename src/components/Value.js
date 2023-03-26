@@ -8,7 +8,7 @@ const Value = () => {
  
   return (
     <div
-    
+    s
       id="value"
       
       className="mt-12 p-8 bg-[#EDF7F8] md:h-[85vh] h-full flex md:flex-row

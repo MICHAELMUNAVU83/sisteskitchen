@@ -34,11 +34,7 @@ const Customers = () => {
     },
   ];
   return (
-    <motion.div
-      className="mt-12 md:py-24 py-12    p-4"
-      ref={ref}
-      animate={animation}
-    >
+    <div className="mt-12 md:py-24 py-12    p-4">
       <div className="flex md:flex-row flex-col gap-12  justify-around  md:gap-48 ">
         <div>
           <div
@@ -126,7 +122,7 @@ const Customers = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
