@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Akronim&family=Alata&family=Amita:wght@700&family=Bakbak+One&family=Cinzel+Decorative:wght@700&family=Courgette&family=Delicious+Handrawn&family=Edu+NSW+ACT+Foundation:wght@500&family=Fjalla+One&family=Italiana&family=Italianno&family=Londrina+Shadow&family=Philosopher:wght@700&family=Quicksand:wght@500&family=Righteous&family=Signika:wght@700&family=Sofia+Sans+Semi+Condensed:wght@200&family=Tilt+Prism&family=Yanone+Kaffeesatz&display=swap');
+
 html {
   scroll-behavior: smooth;
+}
+
+.delicious {
+  font-family: "Delicious Handrawn", cursive;
+}
+.yanone {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.cinzel {
+  font-family: "Cinzel Decorative", cursive;
+}
+.acme {
+  font-family: "Acme", sans-serif;
+}
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+.signika {
+  font-family: "Signika", sans-serif;
+}
+.alata {
+  font-family: "Alata", sans-serif;
 }

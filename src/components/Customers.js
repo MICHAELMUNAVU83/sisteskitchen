@@ -11,26 +11,24 @@ const Customers = () => {
   const slides = [
     {
       image: customer1,
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisam",
+      message: "This is the best food I have ever tasted .",
       name: "John Doe",
     },
     {
       image: customer2,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "She offers the best indoor and outdoor catering services.I highly recommend her services.",
       name: "John Doe",
     },
     {
       image: customer3,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "She offers the best indoor and outdoor catering services.I highly recommend her services.",
       name: "John Doe",
     },
     {
       image: customer4,
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      message: "This is the best food I have ever tasted . ",
       name: "John Doe",
     },
   ];
@@ -62,11 +60,13 @@ const Customers = () => {
         </div>
 
         <div className="flex flex-col w-[90%] mx-auto md:w-[50%] gap-2">
-          <h1 className="text-[#FFA300]">Testimonials</h1>
-          <p className="md:text-5xl text-3xl font-bold">
+          <h1 className="text-[#FFA300] md:text-5xl text-2xl delicious">
+            Testimonials
+          </h1>
+          <p className="md:text-6xl text-2xl font-bold my-2 font-bold text-3xl  signika text-[#16B97A]">
             What Our Customer Say
           </p>
-          <p className="text-5xl font-bold">About Us</p>
+          <p className="text-5xl md:text-7xl font-bold alata">About Us</p>
 
           <Splide
             className="mx-auto my-8 "
@@ -93,8 +93,9 @@ const Customers = () => {
               <SplideSlide key={index}>
                 <div className="flex flex-col gap-2">
                   <p
-                    className="text-gray-500 md:max-w-[100%]
-                  max-w-[90%] mx-auto"
+                    className="text-gray-500 quicksand md:max-w-[100%]
+                    text-start
+                  max-w-[90%] "
                   >
                     {slide.message}
                   </p>
@@ -110,7 +111,7 @@ const Customers = () => {
               </SplideSlide>
             ))}
           </Splide>
-          <div className="flex gap-1 text-gray-500">
+          <div className="flex gap-1 text-gray-500 quicksand">
             <IoStarSharp className="text-[#FFA300]" size={20} />
             <IoStarSharp className="text-[#FFA300]" size={20} />
             <IoStarSharp className="text-[#FFA300]" size={20} />

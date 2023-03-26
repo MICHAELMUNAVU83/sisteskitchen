@@ -7,37 +7,51 @@ import { CiDeliveryTruck } from "react-icons/ci";
 
 const Value = () => {
   return (
-    <div id="value" className="mt-12 p-8  bg-[#EDF7F8] md:h-[80vh] h-full flex md:flex-row flex-col justify-around">
-      <div className="flex flex-col gap-2">
-        <p className="text-[#FFA300] ">Why choose us</p>
-        <h1 className="text-5xl font-bold">Our Value To Help You</h1>
+    <div
+      id="value"
+      className="mt-12 p-8  bg-[#EDF7F8] md:h-[80vh] h-full flex md:flex-row flex-col justify-around"
+    >
+      <div className="flex flex-col gap-4">
+        <p className="text-[#FFA300] delicious text-3xl md:text-5xl ">
+          Why choose us ?
+        </p>
+        <h1 className="md:text-5xl text-3xl text-[#16B97A] signika font-bold">
+          Healthy & Tasty Foods
+        </h1>
+        <h1 className="md:text-5xl text-5xl alata font-bold">Timely Delivery</h1>
 
-        <p className="text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare
+        <p className="text-gray-400 quicksand">
+          Meal prep allows individuals to eat healthier.
         </p>
-        <p className="text-gray-400">
-          commodo justo, in lacinia libero maximus ut. Pellentesque accumsan
+        <p className="text-gray-400 quicksand">
+          It save time during busy weekdays by preparing meals ahead of time.
         </p>
-        <p className="text-gray-400">
-          lacus faucibus, gravida ligula ut, gravida magna.
+        <p className="text-gray-400 quicksand">
+          We ensure you get timely delivery in Nairobi and its environs.
+        </p>
+        <p className="text-gray-400 quicksand">
+          There is also an option of me cooking for you at your home.
         </p>
 
         <div className="flex hover:scale-105 cursor-pointer transition-all duration-500 p-4 gap-4 shadow-gray-200 my-4 shadow-xl bg-white rounded-2xl">
           <TbToolsKitchen className="text-[#16B97A]" size={30} />
-          <p className="text-xl font-bold">
+          <p className="text-xl alata font-bold">
             {" "}
-            All menu recipe made by specialists
+            All menu recipe made by the best .
           </p>
         </div>
 
         <div className="flex hover:scale-105 cursor-pointer transition-all duration-500 p-4 gap-4 shadow-gray-200 my-4 shadow-xl bg-white rounded-2xl">
           <GiTomato className="text-[#16B97A]" size={30} />
-          <p className="text-xl font-bold"> Fresh and locally grown products</p>
+          <p className="text-xl alata font-bold">
+            {" "}
+            Fresh and locally grown products
+          </p>
         </div>
 
         <div className="flex p-4 hover:scale-105 cursor-pointer transition-all duration-500 gap-4 shadow-gray-200 my-4 shadow-xl bg-white rounded-2xl">
           <CiDeliveryTruck className="text-[#16B97A]" size={30} />
-          <p className="text-xl font-bold"> Fast delivery and easy returns</p>
+          <p className="text-xl alata font-bold"> Fast delivery .</p>
         </div>
       </div>
 

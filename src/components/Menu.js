@@ -19,7 +19,7 @@ const Menu = () => {
     },
     {
       image: menu2,
-      name: "Pilau Rice",
+      name: "Chicken Pilau",
       price: "Ksh 200",
       pax: "Feeds 2-3",
     },
@@ -31,7 +31,7 @@ const Menu = () => {
     },
     {
       image: menu4,
-      name: "Pilau Rice",
+      name: "Beef Kebab",
       price: "Ksh 200",
       pax: "Feeds 2-3",
     },
@@ -45,17 +45,26 @@ const Menu = () => {
 
     {
       image: menu6,
-      name: "Pilau Rice",
+      name: "Biriani",
       price: "Ksh 200",
       pax: "Feeds 2-3",
     },
   ];
   return (
-    <div id="menu" className="mt-12 md:py-24 bg-[#EDF7F8] flex flex-col items-center  p-4">
-      <h1 className="text-[#FFA300]  text-xl">Our Top Menu</h1>
-      <p className="my-2 font-bold text-3xl md:text-7xl">Our Special Dish</p>
-      <p className="my-4 md:text-2xl text-center text-sm my-2 text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+    <div
+      id="menu"
+      className="mt-12 md:py-24 bg-[#EDF7F8] flex flex-col items-center  p-4"
+    >
+      <h1 className="text-[#FFA300] md:text-5xl text-2xl delicious">
+        Our Top Menu
+      </h1>
+      <p className="my-2 font-bold text-3xl md:text-7xl signika text-[#16B97A]">
+        Our Special Dishes
+      </p>
+      <p className="font-bold text-md alata md:text-5xl">FOR RAMADAN</p>
+      <p className="my-4 md:text-xl mb-4 text-center text-sm quicksand my-2 text-gray-500">
+        For this Ramadan, we have prepared a special menu for you. We have
+        carefully selected the best dishes for you and your family.
       </p>
       <Splide
         className="w-[95%] mx-auto  "
@@ -90,7 +99,7 @@ const Menu = () => {
         }}
       >
         {slides.map((slide, index) => (
-          <SplideSlide key={index} >
+          <SplideSlide key={index}>
             <div
               className="h-[490px] md:w-[360px] mx-4 bg-white shadow-gray-200   shadow-3xl "
               style={{
@@ -119,11 +128,11 @@ const Menu = () => {
                 <p>5.0</p>
               </div>
 
-              <h1 className="text-5xl font-bold pl-4">{slide.name}</h1>
-              <p className=" font-semibold text-2xl text-[#FFA300] pl-4">
+              <h1 className="text-5xl font-bold pl-4 signika">{slide.name}</h1>
+              <p className=" font-semibold text-2xl alata text-[#FFA300] pl-4">
                 {slide.price}
               </p>
-              <p className="text-gray-500 pl-4">{slide.pax}</p>
+              <p className="text-gray-500 quicksand pl-4">{slide.pax}</p>
             </div>
           </SplideSlide>
         ))}

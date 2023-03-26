@@ -32,12 +32,12 @@ const NavBar = () => {
       <div className="flex justify-between  items-center w-full h-full py-4 px-2 2xl:px-16">
         <a className="ml-4 gap-1 flex items-center " href="/">
           <img src={logo} className=" h-[50px]" alt="logo" />
-          <h1 className="text-gray-400 font-bold ">siste's</h1>{" "}
-          <h1 className="text-[#16B97A] font-bold ">kitchen</h1>
+          <h1 className="text-[#FFA300] md:text-3xl text-xl font-bold delicious">siste's</h1>{" "}
+          <h1 className="text-[#16B97A] md:text-3xl text-xl  font-bold delicious ">kitchen</h1>
         </a>
 
         <div>
-          <ul className="hidden md:flex text-gray-500">
+          <ul className="hidden quicksand md:flex text-gray-500">
             <a
               href="/#home"
               className="text-[#16B97A] transition-all duration-300"
