@@ -1,4 +1,4 @@
-import React from "react";
+import React ,  { useEffect }  from   'react' ;
 import happycustomer from "./images/happycustomer.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./splide-green.min.css";
@@ -7,7 +7,26 @@ import customer2 from "./images/customer2.jpg";
 import customer3 from "./images/customer3.jpg";
 import customer4 from "./images/customer4.jpg";
 import { IoStarSharp } from "react-icons/io5";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 const Customers = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: { duration: 1, bounce: 0.5, type: "spring" },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+      });
+    }
+  }, [inView, animation]);
   const slides = [
     {
       image: customer1,
@@ -33,7 +52,11 @@ const Customers = () => {
     },
   ];
   return (
-    <div className="mt-12 md:py-24 py-12    p-4">
+    <motion.div
+      className="mt-12 md:py-24 py-12    p-4"
+      ref={ref}
+      animate={animation}
+    >
       <div className="flex md:flex-row flex-col gap-12  justify-around  md:gap-48 ">
         <div>
           <div
@@ -121,7 +144,7 @@ const Customers = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

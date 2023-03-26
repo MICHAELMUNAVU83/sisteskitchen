@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./splide-green.min.css";
 import menu1 from "./images/menu1.jpg";
@@ -8,8 +8,32 @@ import menu4 from "./images/menu4.jpeg";
 import menu5 from "./images/menu5.jpeg";
 import menu6 from "./images/menu6.jpeg";
 import { IoStarSharp } from "react-icons/io5";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 const Menu = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          duration: 1.5,
+          ease: "easeInOut",
+          type: "tween",
+          delay: 0.2,
+          stiffness: 100,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        x: "-100vw",
+      });
+    }
+  }, [inView, animation]);
   const slides = [
     {
       image: menu1,
@@ -51,9 +75,11 @@ const Menu = () => {
     },
   ];
   return (
-    <div
+    <motion.div
       id="menu"
+      ref={ref}
       className="mt-12 md:py-24 bg-[#EDF7F8] flex flex-col items-center  p-4"
+      animate={animation}
     >
       <h1 className="text-[#FFA300] md:text-5xl text-2xl delicious">
         Our Top Menu
@@ -137,7 +163,7 @@ const Menu = () => {
           </SplideSlide>
         ))}
       </Splide>
-    </div>
+    </motion.div>
   );
 };
 

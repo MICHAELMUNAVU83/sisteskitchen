@@ -1,15 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import value from "./images/value1.png";
 import { TbToolsKitchen } from "react-icons/tb";
 import { GiTomato } from "react-icons/gi";
-
 import { CiDeliveryTruck } from "react-icons/ci";
-
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 const Value = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        transition: {
+          duration: 2,
+          ease: "easeInOut",
+          delay: 0.2,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+      });
+    }
+  }, [inView, animation]);
   return (
-    <div
+    <motion.div
+      animate={animation}
       id="value"
-      className="mt-12 p-8  bg-[#EDF7F8] md:h-[80vh] h-full flex md:flex-row flex-col justify-around"
+      ref={ref}
+      className="mt-12 p-8 bg-[#EDF7F8] md:h-[80vh] h-full flex md:flex-row
+      flex-col justify-around"
     >
       <div className="flex flex-col gap-4">
         <p className="text-[#FFA300] delicious text-3xl md:text-5xl ">
@@ -18,7 +42,9 @@ const Value = () => {
         <h1 className="md:text-5xl text-3xl text-[#16B97A] signika font-bold">
           Healthy & Tasty Foods
         </h1>
-        <h1 className="md:text-5xl text-5xl alata font-bold">Timely Delivery</h1>
+        <h1 className="md:text-5xl text-5xl alata font-bold">
+          Timely Delivery
+        </h1>
 
         <p className="text-gray-400 quicksand">
           Meal prep allows individuals to eat healthier.
@@ -54,7 +80,6 @@ const Value = () => {
           <p className="text-xl alata font-bold"> Fast delivery .</p>
         </div>
       </div>
-
       <div>
         <div className="bg-white md:w-[550px] w-[90%] mx-auto rounded-tl-3xl h-[52vh] md:h-[85vh]  rounded-br-3xl flex items-center">
           <div
@@ -68,7 +93,7 @@ const Value = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
