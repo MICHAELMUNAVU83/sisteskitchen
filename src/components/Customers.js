@@ -12,25 +12,25 @@ const Customers = () => {
     {
       image: customer1,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisam",
       name: "John Doe",
     },
     {
       image: customer2,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit",
       name: "John Doe",
     },
     {
       image: customer3,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit",
       name: "John Doe",
     },
     {
       image: customer4,
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. QuisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       name: "John Doe",
     },
   ];
@@ -92,7 +92,12 @@ const Customers = () => {
             {slides.map((slide, index) => (
               <SplideSlide key={index}>
                 <div className="flex flex-col gap-2">
-                  <p className="text-gray-500">{slide.message}</p>
+                  <p
+                    className="text-gray-500 md:max-w-[100%]
+                  max-w-[90%] mx-auto"
+                  >
+                    {slide.message}
+                  </p>
                   <div className="flex my-4 gap-2">
                     <img
                       src={slide.image}
