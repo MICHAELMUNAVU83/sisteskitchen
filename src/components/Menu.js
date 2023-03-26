@@ -64,6 +64,7 @@ const Menu = () => {
           perMove: 1,
           autoplay: true,
           interval: 5000,
+          rewind: true,
           pauseOnHover: false,
           pauseOnFocus: false,
 
