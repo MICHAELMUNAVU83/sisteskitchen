@@ -18,8 +18,8 @@ const Programs = () => {
           </p>
         </div>
 
-        <div className="flex mx-auto my-8 md:my-0  flex-col items-center gap-4  shadow-[#16B97A] shadow-2xl py-4 px-8 rounded-2xl w-[350px]">
-          <h1>Weekly Rate</h1>
+        <div className="flex mx-auto my-8 md:my-0  flex-col items-center gap-4  shadow-[#16B97A] shadow-2xl py-4 px-8 rounded-2xl md:w-[350px] w-[85%]">
+          <h1 className="text-3xl font-bold">Weekly Rate</h1>
           <small>Two meals a day from Monday to Friday</small>
           <div className="bg-[#EDF7F8]/50 rounded-2xl flex flex-col gap-2 p-4 justify-center items-center">
             <div className="flex  gap-4">
@@ -50,7 +50,7 @@ const Programs = () => {
               <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
             </div>
           </div>
-          <h1>Labour Only</h1>
+          <h1 className="text-2xl font-semibold">Labour Only</h1>
           <div className="bg-[#EDF7F8]/50 rounded-2xl flex flex-col gap-2 p-4 justify-center items-center">
             <div className="flex  gap-4">
               <h1 className="text-[#16B97A] font-bold ">1 pax</h1>
@@ -82,8 +82,8 @@ const Programs = () => {
           </div>
         </div>
 
-        <div className="flex shadow-[#FFA300] mx-auto my-8 md:my-0   flex-col items-center gap-4 shadow-2xl px-8 py-4 rounded-lg w-[350px]">
-          <h1>Monthly Rate</h1>
+        <div className="flex shadow-[#FFA300] mx-auto my-8 md:my-0   flex-col items-center gap-4 shadow-2xl px-8 py-4 rounded-lg  md:w-[350px] w-[85%]">
+          <h1 className="text-3xl font-bold">Monthly Rate</h1>
           <small>Two meals a day from Monday to Friday</small>
           <div className="bg-[#EDF7F8]/50 rounded-2xl flex flex-col gap-2 p-4 justify-center items-center">
             <div className="flex  gap-4">
@@ -114,7 +114,7 @@ const Programs = () => {
               <h1 className="text-[#FFA300] font-bold ">Ksh 10,000</h1>
             </div>
           </div>
-          <h1>Labour Only</h1>
+          <h1 className="text-2xl font-semibold">Labour Only</h1>
           <div className="bg-[#EDF7F8]/50 rounded-2xl flex flex-col gap-2 p-4  justify-center items-center">
             <div className="flex  gap-4">
               <h1 className="text-[#16B97A] font-bold ">1 pax</h1>

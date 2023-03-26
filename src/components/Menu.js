@@ -90,9 +90,9 @@ const Menu = () => {
         }}
       >
         {slides.map((slide, index) => (
-          <SplideSlide key={index} className="mx-auto">
+          <SplideSlide key={index} >
             <div
-              className="h-[490px] md:w-[360px] w-[400px] bg-white shadow-gray-200   shadow-3xl "
+              className="h-[490px] md:w-[360px] mx-4 bg-white shadow-gray-200   shadow-3xl "
               style={{
                 borderTopLeftRadius: "70px",
                 borderBottomRightRadius: "70px",
