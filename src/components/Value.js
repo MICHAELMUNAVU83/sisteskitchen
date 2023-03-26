@@ -11,7 +11,7 @@ const Value = () => {
     s
       id="value"
       
-      className="mt-12 p-8 bg-[#EDF7F8] md:h-[90vh] h-full flex md:flex-row
+      className="mt-12 p-8 bg-[#EDF7F8]  h-full flex md:flex-row
       flex-col justify-around"
     >
       <div className="flex flex-col gap-4">
@@ -60,9 +60,9 @@ const Value = () => {
         </div>
       </div>
       <div>
-        <div className="bg-white md:w-[550px] w-[90%] mx-auto rounded-tl-3xl h-[52vh] md:h-[100vh]  rounded-br-3xl flex items-center">
+        <div className="bg-white md:w-[550px] w-[90%] mx-auto rounded-tl-3xl h-[52vh] md:h-[77vh]  rounded-br-3xl flex items-center">
           <div
-            className=" bg-gradient-to-t from-[#FFA300] flex justify-center my-auto mx-auto  h-[50vh] md:h-[82vh]  overflow-hidden  w-[95%]"
+            className=" bg-gradient-to-t from-[#FFA300] flex justify-center my-auto mx-auto  h-[50vh] md:h-[75vh]  overflow-hidden  w-[95%]"
             style={{
               borderBottomRightRadius: "70px",
               borderTopLeftRadius: "70px",
